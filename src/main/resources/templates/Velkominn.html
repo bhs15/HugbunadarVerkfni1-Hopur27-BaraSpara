@@ -5,8 +5,9 @@
     <title>Title</title>
 </head>
 <body>
+
 <div th:switch="${savingTypes}">
-    <h2 th:case="null">No savingTypes yet!</h2>
+    <h2 th:case="null">No Saving Types yet!</h2>
     <div th:case="*">
         <h2>SavingTypes</h2>
         <table>

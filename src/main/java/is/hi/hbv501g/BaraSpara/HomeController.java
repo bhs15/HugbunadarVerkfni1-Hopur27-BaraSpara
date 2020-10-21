@@ -32,7 +32,7 @@ public class HomeController {
     //TODO Add @Valid and fix import and error handling
     public String addSavingType(SavingType savingType, BindingResult result, Model model) {
         if (result.hasErrors()) {
-            return "add-SavingType";
+            return "addSavingType";
         }
 
         //Vistar nýju SavingType og skilar nýja listanum með model
@@ -43,8 +43,8 @@ public class HomeController {
 
     //TODO error handling og HTML síðu
     @RequestMapping(value = "/addSavingType", method = RequestMethod.GET)
-    public String addSavingTypeForm(Model model){
-        return "add-SavingType";
+    public String addSavingTypeForm(SavingType savingType){
+        return "addSavingType";
     }
 
     //TODO HTML síðu /delete
