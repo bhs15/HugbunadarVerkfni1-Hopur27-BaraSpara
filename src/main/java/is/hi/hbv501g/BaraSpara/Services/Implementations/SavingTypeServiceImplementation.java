@@ -5,7 +5,6 @@ import is.hi.hbv501g.BaraSpara.Repositories.SavingTypeRepo;
 import is.hi.hbv501g.BaraSpara.Services.SavingTypeService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-
 import java.util.List;
 import java.util.Optional;
 
